@@ -21,9 +21,6 @@ for f in apps/*.sh; do  # or wget-*.sh instead of *.sh
   sh "$f" -H 
 done
 
-# EoG -> EoM
-apt-get -y install eom
-
-
 update-desktop-database
-
+glib-compile-schemas /usr/share/glib-2.0/schemas/
+dconf update
