@@ -1,2 +1,5 @@
 [org.cinnamon.desktop.default-applications.terminal]
 exec='x-terminal-emulator'
+
+[org.mate.applications-terminal]
+exec='x-terminal-emulator'
