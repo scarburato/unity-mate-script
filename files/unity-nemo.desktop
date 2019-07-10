@@ -1,0 +1,33 @@
+[Desktop Entry]
+Name=Files
+Comment=Access and organize files
+Exec=nemo %U
+Icon=org.gnome.Nautilus
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=GNOME;GTK;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+Actions=new-window;
+
+X-Unity-IconBackgroundColor=#af4853
+# I think this is for locazation
+X-Ubuntu-Gettext-Domain=nautilus
+Keywords=folder;manager;explore;disk;filesystem;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=nemo %U
+
+#[Desktop Action open-home]
+#Name=Home
+#Exec=nemo %U
+
+#[Desktop Action open-computer]
+#Name=Computer
+#Exec=nemo computer:///
+
+#[Desktop Action open-trash]
+#Name=Trash
+#Name[it]=Cestino
+#Exec=nemo trash:///
