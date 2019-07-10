@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Set Nemo default file manager
 cp files/unity-nemo.desktop /usr/share/applications/

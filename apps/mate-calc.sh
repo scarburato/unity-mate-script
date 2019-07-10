@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 apt-get -y install mate-calc
 
