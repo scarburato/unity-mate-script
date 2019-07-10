@@ -7,7 +7,7 @@ then
 fi
 
 export DEFAULTS_FILE='/usr/share/applications/defaults.list'
-export REMOVE_GNOME=false
+export REMOVE_GNOME=true
 
 # Add unity7-mainteners ppa
 apt-get -y install software-properties-common 
