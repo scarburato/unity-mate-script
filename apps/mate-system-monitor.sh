@@ -2,8 +2,8 @@
 
 apt-get -y install mate-system-monitor
 
-# Show menu entry in Unity
-sed -i '/OnlyShowIn=MATE;/c\OnlyShowIn=MATE;Unity;' /tmp/foo
+# Copy MATE System Monitor launcher for Unity
+cp files/unity-mate-system-monitor.desktop /usr/share/applications/
 
 if $REMOVE_GNOME
 then 

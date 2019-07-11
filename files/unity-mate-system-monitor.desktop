@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=System Monitor
+GenericName=System Monitor
+Comment=View current processes and monitor system state
+
+TryExec=mate-system-monitor
+Exec=mate-system-monitor
+Icon=utilities-system-monitor
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;System;Monitor;
+Keywords=MATE;system;monitor;process;list;view;current;resources;
+OnlyShowIn=Unity
+
+X-Ubuntu-Gettext-Domain=gnome-system-monitor
