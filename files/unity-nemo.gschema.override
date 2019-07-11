@@ -1,0 +1,9 @@
+[org.nemo.preferences]
+enable-delete=false
+show-compact-view-icon-toolbar=false
+
+[org.nemo.desktop]
+font='Ubuntu 11'
+
+[org.nemo.window-state]
+start-with-status-bar=false

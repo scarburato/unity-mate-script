@@ -21,6 +21,10 @@ for f in apps/*.sh; do  # or wget-*.sh instead of *.sh
   sh "$f" -H 
 done
 
+echo -n "Updating dconf.... "
+
 update-desktop-database
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 dconf update
+
+echo "Done!"
