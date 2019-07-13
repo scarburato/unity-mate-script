@@ -7,17 +7,21 @@ then
 fi
 
 export DEFAULTS_FILE='/usr/share/applications/defaults.list'
-export REMOVE_GNOME=true
+export KEEP_GNOME=false
 
 # Add unity7-mainteners ppa
-apt-get -y install software-properties-common 
-add-apt-repository -y ppa:unity7maintainers/unity7-desktop
+apt-get -y install software-properties-common
+
+if [ ! -f /etc/apt/sources.list.d/unity7maintainers-ubuntu-unity7-desktop-disco.list ]
+then
+    add-apt-repository -y ppa:unity7maintainers/unity7-desktop
+fi
 
 # Unity desktop
 apt-get -y install ubuntu-unity-desktop 
 
 # Mate apps + Nemo
-for f in apps/*.sh; do  # or wget-*.sh instead of *.sh
+for f in apps/*.sh; do
   sh "$f" -H 
 done
 

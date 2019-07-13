@@ -9,7 +9,7 @@ update-alternatives --set x-terminal-emulator /usr/bin/mate-terminal.wrapper
 cp files/unity-mate-terminal.gschema.override /usr/share/glib-2.0/schemas/ 
 chown root:root /usr/share/glib-2.0/schemas/unity-mate-terminal.gschema.override
 
-if $REMOVE_GNOME
+if ! $KEEP_GNOME
 then 
 	apt-get -y remove gnome-terminal
 fi

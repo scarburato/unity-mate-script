@@ -6,7 +6,7 @@ apt-get -y install pluma
 sed -i 's/eog.desktop/eom.desktop/g' $DEFAULTS_FILE
 xdg-mime --mode system default pluma.desktop text/plain
 
-if $REMOVE_GNOME
+if ! $KEEP_GNOME
 then 
 	apt-get -y remove gedit
 fi

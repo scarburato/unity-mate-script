@@ -15,7 +15,7 @@ chown root:root /usr/share/glib-2.0/schemas/unity-panel-nemo.gschema.override
 cp files/unity-nemo.gschema.override /usr/share/glib-2.0/schemas/ 
 chown root:root /usr/share/glib-2.0/schemas/unity-nemo.gschema.override
 
-if $REMOVE_GNOME
+if ! $KEEP_GNOME
 then 
 	echo "It\'s not possible to remove Nautilus without remove Unity...."
 fi
