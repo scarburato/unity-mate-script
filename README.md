@@ -5,7 +5,7 @@ A simple script for install some MATE Apps on top of the Unity Desktop, it also 
 1. Download Ubuntu 19.04 mini.iso from [here](http://archive.ubuntu.com/ubuntu/dists/disco/main/installer-amd64/current/images/netboot/)
 2. Install the system without any desktop environment
 3. Copy this repo on the system
-4. Set [`REMOVE_GNOME`](https://github.com/scarburato/unity-mate-script/blob/44a23dd7d63cb7ada2cab420e28077bf91715513/mate-unity.sh#L10) to `false` if you want to keep the GNOME Apps
+4. Set [`KEEP_GNOME`](https://github.com/scarburato/unity-mate-script/blob/44a23dd7d63cb7ada2cab420e28077bf91715513/mate-unity.sh#L10) to `true` if you want to keep the GNOME Apps
 5. ```sudo ./mate-unity.sh```
 6. Reboot
 
