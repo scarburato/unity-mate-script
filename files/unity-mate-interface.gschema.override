@@ -1,0 +1,6 @@
+[org.mate.interface]
+document-font-name='Sans 11'
+monospace-font-name='Ubuntu Mono 13'
+
+[org.cinnamon.desktop.interface]
+font-name='Sans 11'
